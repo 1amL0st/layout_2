@@ -73,7 +73,7 @@ h, h1, h2, h3, h4, h5, p {
 
 .item {
     max-width: 260px;
-    
+
     .figcaption {
         margin-top: 40px;
     }
@@ -81,5 +81,23 @@ h, h1, h2, h3, h4, h5, p {
     .figcaption {
         font-weight: 600;
         font-size: 20px;
+    }
+
+    .text {
+        max-width: 270px;
+        margin-top: 18px;
+        text-align: center;
+    }
+}
+
+.article {
+    .title {
+        margin-top: 128px;
+    }
+
+    .p {
+        text-align: center;;
+        margin-top: 32px;
+        max-width: 630px;
     }
 }

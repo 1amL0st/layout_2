@@ -1,0 +1,32 @@
+.services {
+    background-color: $light-blue;
+    padding-bottom: 128px;
+    .grid {
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, minmax(270px, 370px));
+        row-gap: 32px;
+        margin-top: 128px;
+    }
+
+    .item {
+        padding: 64px 0;
+        background-color: white;
+        max-width: 370px;
+    }
+
+    .item > * {
+        color: inherit;
+    }
+
+    .btn {
+        margin-top: 50px;
+        border-color: black;
+        padding: 0.7em 1em;
+    }
+
+    .link:hover {
+        color: unset;
+    }
+}

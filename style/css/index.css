@@ -78,6 +78,20 @@ h, h1, h2, h3, h4, h5, p {
   font-weight: 600;
   font-size: 20px;
 }
+.item .text {
+  max-width: 270px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.article .title {
+  margin-top: 128px;
+}
+.article .p {
+  text-align: center;
+  margin-top: 32px;
+  max-width: 630px;
+}
 
 .header {
   padding: 40px 0;
@@ -123,19 +137,40 @@ h, h1, h2, h3, h4, h5, p {
   font-size: 50px;
 }
 
-.about .title {
-  margin-top: 128px;
-}
-.about p {
-  text-align: center;
-  margin-top: 32px;
-  max-width: 630px;
-}
 .about .row {
   justify-content: space-between;
   width: 100%;
   max-width: 1070px;
   margin: 128px 0;
+}
+
+.services {
+  background-color: #e4fdf9;
+  padding-bottom: 128px;
+}
+.services .grid {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, minmax(270px, 370px));
+  row-gap: 32px;
+  margin-top: 128px;
+}
+.services .item {
+  padding: 64px 0;
+  background-color: white;
+  max-width: 370px;
+}
+.services .item > * {
+  color: inherit;
+}
+.services .btn {
+  margin-top: 50px;
+  border-color: black;
+  padding: 0.7em 1em;
+}
+.services .link:hover {
+  color: unset;
 }
 
 /*# sourceMappingURL=index.css.map */
