@@ -5,7 +5,7 @@ body {
   font-size: 15px;
 }
 
-h, h1, h2, h3, h4, h5 {
+h, h1, h2, h3, h4, h5, p {
   font-weight: 500;
   margin: 0;
 }
@@ -13,6 +13,9 @@ h, h1, h2, h3, h4, h5 {
 .link {
   text-decoration: none;
   color: black;
+}
+.link:hover {
+  color: blue;
 }
 
 .section {
@@ -60,6 +63,22 @@ h, h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.item {
+  max-width: 260px;
+}
+.item .figcaption {
+  margin-top: 40px;
+}
+.item .figcaption {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .header {
   padding: 40px 0;
 }
@@ -104,9 +123,19 @@ h, h1, h2, h3, h4, h5 {
   font-size: 50px;
 }
 
-.about {
-  height: 720px;
-  background-color: red;
+.about .title {
+  margin-top: 128px;
+}
+.about p {
+  text-align: center;
+  margin-top: 32px;
+  max-width: 630px;
+}
+.about .row {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1070px;
+  margin: 128px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
