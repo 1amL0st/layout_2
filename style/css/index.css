@@ -305,4 +305,54 @@ h, h1, h2, h3, h4, h5, p {
   margin-top: 50px;
 }
 
+.team {
+  padding: 128px 0;
+}
+.team .members {
+  width: 100%;
+  justify-content: space-between;
+  margin: 128px 0;
+}
+.team .selectors {
+  margin: auto;
+  max-width: 64px;
+  justify-content: space-between;
+}
+.team .selectors .selector {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00897b;
+}
+.team .selectors .selector.active {
+  background-color: #3949ab;
+}
+.team .selectors .selector:hover {
+  cursor: grab;
+}
+.team .member {
+  max-width: 370px;
+}
+.team .member .photoe {
+  width: 100%;
+  max-height: 320px;
+}
+.team .member .name {
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.team .member .socials {
+  width: 80%;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.team .member .social {
+  border-radius: 8px;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f0f1f1;
+}
+
 /*# sourceMappingURL=index.css.map */

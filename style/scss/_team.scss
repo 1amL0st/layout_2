@@ -1,0 +1,59 @@
+.team {
+    padding: 128px 0;
+
+    .members {
+        width: 100%;
+        justify-content: space-between;
+        margin: 128px 0;
+    }
+
+    .selectors {
+        margin: auto;
+        max-width: 64px;
+        justify-content: space-between;
+
+        .selector {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $sea-like;
+
+            &.active {
+                background-color: $blue;
+            }
+
+            &:hover {
+                cursor: grab;
+            }
+        }
+    }
+
+    .member {
+        max-width: 370px;
+
+        .photoe {
+            width: 100%;
+            max-height: 320px;
+        }
+
+        .name {
+            margin-top: 32px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .socials {
+            width: 80%;
+            margin-top: 40px;
+            justify-content: space-between;
+        }
+
+        .social {
+            border-radius: 8px;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: $light-gray;
+        }
+    }
+}
