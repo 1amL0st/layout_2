@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 
+        <script src="./script/index.js"></script>
+
         <title>Appo</title>
     </head>
 
-    <body>
+    <body onload="OnLoadEvents()">
 
         <header class="header section">
             <div class="container row">
@@ -21,8 +23,8 @@
                 <nav class="nav row">
                     <a class="link" href="#home">Home</a>
                     <a class="link" href="#about">About</a>
-                    <a class="link" href="#">Servicing</a>
-                    <a class="link" href="#">Portfolio</a>
+                    <a class="link" href="#services">Servicing</a>
+                    <a class="link" href="#portfolio">Portfolio</a>
                     <a class="link" href="#">Blog</a>
                     <a class="link" href="#">Contact us</a>
                     <a class="link fa fa-search" href="#"></a>
@@ -37,8 +39,8 @@
                 <h2 class="h2">Very suitable to support all web development projects</h2>
 
                 <div class="row buttons">
-                    <button class="btn">our services</button>
-                    <button class="btn">hire is now</button>
+                    <a class="btn link" href="">our services</a>
+                    <a class="btn link" href="">hire is now</a>
                 </div>
 
                 <span class="arrow fa fa-angle-down"></span>
@@ -59,7 +61,7 @@
                     </div>
 
                     <div class="item column">
-                        <img class="item-img" alt="page" images/about/2.png">
+                        <img class="item-img" alt="page" src="images/about/2.png">
                         <h3 class="figcaption">One Page</h3>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                     </div>
@@ -73,7 +75,7 @@
             </div>
         </section>
 
-        <section class="services section">
+        <section id="services" class="services section">
             <div class="container column">
                 <article class="article column">
                     <h2 class="title">Our Services</h2>
@@ -126,5 +128,75 @@
             </div>
         </section>
 
+        <section id="portfolio" class="portfolio secti">
+            <div class="container column">
+                <article class="article column">
+                    <h2 class="title">Latest Works</h2>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </article>
+
+                <div class="filter-view column">
+                    <div class="filters row">
+                        <a class="btn link active">all</a>
+                        <a class="btn link">web design</a>
+                        <a class="btn link">ui/ux design</a>
+                        <a class="btn link">mockups</a>
+                    </div>
+
+                    <div class="view">
+                        <div class="preview type-web-design row">
+                            <img class="bg-img" src="images/portfolio/1.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+
+                        <div class="preview type-web-design row">
+                            <img class="bg-img" src="images/portfolio/2.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+
+                        <div class="preview type-ui-ux-design row">
+                            <img class="bg-img" src="images/portfolio/3.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+
+                        <div class="preview type-ui-ux-design row">
+                            <img class="bg-img" src="images/portfolio/4.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+
+                        <div class="preview type-mockups row">
+                            <img class="bg-img" src="images/portfolio/5.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+
+                        <div class="preview type-web-design row">
+                            <img class="bg-img" src="images/portfolio/6.png">
+                            <div class="text column">
+                                <h3 class="name">Hand Watch</h3>
+                                <span class="type">ui/ux design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="view-all btn link active">View All</a>
+            </div>
+        </section>
+        
     </body>
 </html>

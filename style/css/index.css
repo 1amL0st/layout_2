@@ -61,6 +61,11 @@ h, h1, h2, h3, h4, h5, p {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  text-align: center;
+}
+.btn.link:hover {
+  color: unset;
+  cursor: grab;
 }
 
 .title {
@@ -127,10 +132,12 @@ h, h1, h2, h3, h4, h5, p {
   width: 100%;
   justify-content: space-between;
   margin-top: 110px;
-  max-width: 460px;
+  max-width: 480px;
 }
 .home .btn {
-  width: 220px;
+  width: 230px;
+  max-width: 230px;
+  margin: 0 16px;
 }
 .home .arrow {
   margin: 100px 0;
@@ -161,16 +168,76 @@ h, h1, h2, h3, h4, h5, p {
   background-color: white;
   max-width: 370px;
 }
-.services .item > * {
+.services .item.is-hover {
+  color: white;
+  background-color: #00897b;
+}
+.services .item * {
   color: inherit;
+}
+.services .item .item-img.is-hover {
+  filter: invert(1);
 }
 .services .btn {
   margin-top: 50px;
   border-color: black;
   padding: 0.7em 1em;
+  background-color: inherit;
+}
+.services .btn.is-hover {
+  border-color: white;
 }
 .services .link:hover {
   color: unset;
+}
+
+.portfolio {
+  padding-bottom: 128px 0;
+}
+.portfolio .btn {
+  border-color: #00897b;
+}
+.portfolio .btn.active {
+  background-color: #00897b;
+  color: white;
+}
+.portfolio .view-all {
+  margin: 128px 0;
+}
+.portfolio .filter-view {
+  margin-top: 128px;
+  width: 100%;
+}
+.portfolio .filter-view .filters {
+  width: 100%;
+  max-width: 720px;
+  justify-content: space-between;
+}
+.portfolio .filter-view .view {
+  margin: 64px 0;
+  width: 100%;
+  height: 720px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(128px, 370px));
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.portfolio .filter-view .view .preview {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 370px;
+  max-height: 370px;
+  color: white;
+  font-weight: 600;
+}
+.portfolio .filter-view .view .preview .text {
+  width: fit-content;
+  visibility: visible;
+}
+.portfolio .filter-view .view .preview .name {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

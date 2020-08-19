@@ -64,6 +64,12 @@ h, h1, h2, h3, h4, h5, p {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    text-align: center;
+
+    &.link:hover {
+        color: unset;
+        cursor: grab;
+    }
 }
 
 .title {

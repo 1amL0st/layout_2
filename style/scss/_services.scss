@@ -1,6 +1,10 @@
+$item-bg-hover-color: $sea-like;
+$item-bg-default-color: white;
+
 .services {
     background-color: $light-blue;
     padding-bottom: 128px;
+
     .grid {
         width: 100%;
         display: grid;
@@ -12,18 +16,34 @@
 
     .item {
         padding: 64px 0;
-        background-color: white;
+        background-color: $item-bg-default-color;
         max-width: 370px;
-    }
 
-    .item > * {
-        color: inherit;
+        &.is-hover {
+            color: white;
+            background-color: $item-bg-hover-color;
+        }
+
+        * {
+            color:inherit
+        }
+
+        .item-img {
+            &.is-hover {
+                filter: invert(1);
+            }
+        }
     }
 
     .btn {
         margin-top: 50px;
         border-color: black;
         padding: 0.7em 1em;
+        background-color: inherit;
+
+        &.is-hover {
+            border-color: white;
+        }
     }
 
     .link:hover {
