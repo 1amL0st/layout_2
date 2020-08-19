@@ -6,7 +6,7 @@ body {
 }
 
 h, h1, h2, h3, h4, h5, p {
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -353,6 +353,47 @@ h, h1, h2, h3, h4, h5, p {
   width: 50px;
   height: 50px;
   background-color: #f0f1f1;
+}
+
+.blog {
+  padding: 128px 0;
+  background-color: #e4fdf9;
+}
+.blog .article {
+  margin-bottom: 128px;
+}
+.blog .blog-a:nth-child(3n) {
+  flex-direction: row-reverse;
+}
+.blog .blog-a:nth-child(3n) .text {
+  margin-left: 0px;
+  margin-right: 3%;
+}
+.blog .blog-a {
+  height: 400px;
+}
+.blog .blog-a .text {
+  padding-top: 40px;
+  margin-left: 3%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+.blog .blog-a .text .title:hover {
+  color: #00897b;
+}
+.blog .blog-a .text .info {
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 32px 0;
+}
+.blog .blog-a .text .info .type {
+  margin-left: 16px;
+}
+.blog .btn {
+  margin-top: 128px;
 }
 
 /*# sourceMappingURL=index.css.map */
