@@ -70,6 +70,15 @@ h, h1, h2, h3, h4, h5, p {
         color: unset;
         cursor: grab;
     }
+
+    &.active {
+        background-color: $sea-like;
+        color: white;
+    }
+
+    &:hover {
+        background-color: $sea-like;
+    }
 }
 
 .title {
@@ -97,10 +106,6 @@ h, h1, h2, h3, h4, h5, p {
 }
 
 .article {
-    .title {
-        margin-top: 128px;
-    }
-
     .p {
         text-align: center;;
         margin-top: 32px;

@@ -51,6 +51,19 @@ function OnLoadPortfolioSection()
             ShowLatestProjects(e.srcElement);
         });
     }
+
+    let views = document.getElementById('portfolio').getElementsByClassName('filter-view')[0].getElementsByClassName('preview');
+    for (let v of views) {
+        v.addEventListener('mouseover', e => {
+            v.children[1].style.visibility = 'visible';
+            v.children[0].style.filter = 'brightness(10%)';
+        });
+
+        v.addEventListener('mouseleave', e => {
+            v.children[1].style.visibility = 'hidden';
+            v.children[0].style.filter = 'unset';
+        });
+    }
 }
 
 function OnLoadEvents()
