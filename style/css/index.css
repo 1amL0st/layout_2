@@ -392,8 +392,82 @@ h, h1, h2, h3, h4, h5, p {
 .blog .blog-a .text .info .type {
   margin-left: 16px;
 }
+.blog .blog-a .text .info .fa-calendar {
+  margin-right: 16px;
+}
+.blog .blog-a .text .info .fa-file {
+  margin-left: 16px;
+}
 .blog .btn {
   margin-top: 128px;
+}
+
+.footer {
+  padding-top: 128px;
+  background-color: #222322;
+  color: white;
+}
+.footer .contacts {
+  justify-content: space-between;
+  max-width: 970px;
+  width: 100%;
+  margin: 100px auto 75px auto;
+}
+.footer .contact {
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 270px;
+}
+.footer .contact .icon {
+  justify-content: center;
+  width: 105px;
+  height: 105px;
+  background-color: #3949ab;
+  border-radius: 50%;
+}
+.footer .caption {
+  text-align: center;
+  margin-top: 32px;
+}
+.footer * {
+  box-sizing: border-box;
+}
+.footer .contact-form {
+  margin-bottom: 128px;
+  width: 100%;
+  max-width: 1030px;
+}
+.footer .contact-form .row {
+  justify-content: space-between;
+}
+.footer .contact-form * {
+  width: 100%;
+}
+.footer .contact-form input, .footer .contact-form textarea {
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1em 0.5em;
+}
+.footer .contact-form textarea {
+  margin: 32px 0;
+}
+.footer .contact-form input {
+  max-width: 500px;
+}
+.footer .contact-form input[type=submit] {
+  align-self: flex-end;
+  max-width: 230px;
+}
+.footer .reserved {
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  padding: 1em 0;
 }
 
 /*# sourceMappingURL=index.css.map */
