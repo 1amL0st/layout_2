@@ -1,0 +1,55 @@
+.btn {
+    padding: 1em 32px;
+    border: solid 2px white;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    &.link:hover {
+        color: unset;
+        cursor: grab;
+    }
+
+    &.active {
+        background-color: $sea-like;
+        color: white;
+    }
+
+    &:hover {
+        background-color: $sea-like;
+    }
+
+    .services & {
+        margin-top: 50px;
+        border-color: black;
+        padding: 0.7em 1em;
+        background-color: inherit;
+
+        &.is-hover {
+            border-color: white;
+        }
+    }
+
+    .pricing & {
+        margin-top: 50px;
+        font-weight: 500;
+        border-color: black;
+    }
+
+    .blog & {
+        margin-top: 128px;
+    }
+
+    .home & {
+        width: 230px;
+        max-width: 230px;
+        margin: 0 16px;
+    }
+
+    .portfolio & {
+        border-color: $sea-like;
+    }
+}

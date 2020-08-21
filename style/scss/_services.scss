@@ -36,17 +36,6 @@ $item-bg-default-color: white;
         }
     }
 
-    .btn {
-        margin-top: 50px;
-        border-color: black;
-        padding: 0.7em 1em;
-        background-color: inherit;
-
-        &.is-hover {
-            border-color: white;
-        }
-    }
-
     .link:hover {
         color: unset;
     }

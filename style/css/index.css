@@ -23,11 +23,6 @@ h, h1, h2, h3, h4, h5, p {
   width: 100%;
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -51,28 +46,6 @@ h, h1, h2, h3, h4, h5, p {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.btn {
-  padding: 1em 32px;
-  border: solid 2px white;
-  background: transparent;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-.btn.link:hover {
-  color: unset;
-  cursor: grab;
-}
-.btn.active {
-  background-color: #00897b;
-  color: white;
-}
-.btn:hover {
-  background-color: #00897b;
 }
 
 .title {
@@ -100,6 +73,53 @@ h, h1, h2, h3, h4, h5, p {
   text-align: center;
   margin-top: 32px;
   max-width: 630px;
+}
+
+.btn {
+  padding: 1em 32px;
+  border: solid 2px white;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn.link:hover {
+  color: unset;
+  cursor: grab;
+}
+.btn.active {
+  background-color: #00897b;
+  color: white;
+}
+.btn:hover {
+  background-color: #00897b;
+}
+.services .btn {
+  margin-top: 50px;
+  border-color: black;
+  padding: 0.7em 1em;
+  background-color: inherit;
+}
+.services .btn.is-hover {
+  border-color: white;
+}
+.pricing .btn {
+  margin-top: 50px;
+  font-weight: 500;
+  border-color: black;
+}
+.blog .btn {
+  margin-top: 128px;
+}
+.home .btn {
+  width: 230px;
+  max-width: 230px;
+  margin: 0 16px;
+}
+.portfolio .btn {
+  border-color: #00897b;
 }
 
 .header {
@@ -137,11 +157,6 @@ h, h1, h2, h3, h4, h5, p {
   justify-content: space-between;
   margin-top: 110px;
   max-width: 480px;
-}
-.home .btn {
-  width: 230px;
-  max-width: 230px;
-  margin: 0 16px;
 }
 .home .arrow {
   margin: 100px 0;
@@ -185,24 +200,12 @@ h, h1, h2, h3, h4, h5, p {
 .services .item .item-img.is-hover {
   filter: invert(1);
 }
-.services .btn {
-  margin-top: 50px;
-  border-color: black;
-  padding: 0.7em 1em;
-  background-color: inherit;
-}
-.services .btn.is-hover {
-  border-color: white;
-}
 .services .link:hover {
   color: unset;
 }
 
 .portfolio {
   padding: 128px 0;
-}
-.portfolio .btn {
-  border-color: #00897b;
 }
 .portfolio .filter-view {
   margin-top: 128px;
@@ -248,10 +251,6 @@ h, h1, h2, h3, h4, h5, p {
   padding: 128px 0;
   font-size: 17px;
   font-weight: 300;
-}
-.pricing .btn {
-  font-weight: 500;
-  border-color: black;
 }
 .pricing .prices {
   margin-top: 128px;
@@ -300,9 +299,6 @@ h, h1, h2, h3, h4, h5, p {
   margin-bottom: 36px;
   padding-bottom: 8px;
   border-bottom: solid 1px gray;
-}
-.pricing .price .btn {
-  margin-top: 50px;
 }
 
 .team {
@@ -397,9 +393,6 @@ h, h1, h2, h3, h4, h5, p {
 }
 .blog .blog-a .text .info .fa-file {
   margin-left: 16px;
-}
-.blog .btn {
-  margin-top: 128px;
 }
 
 .footer {

@@ -6,11 +6,6 @@
     font-size: 17px;
     font-weight: 300;
 
-    .btn {
-        font-weight: 500;
-        border-color: black;
-    }
-
     .prices {
         margin-top: 128px;
         justify-content: space-between;
@@ -67,10 +62,6 @@
             padding-bottom: 8px;
             
             border-bottom: solid 1px gray;
-        }
-
-        .btn {
-            margin-top: 50px;
         }
     }
 }
