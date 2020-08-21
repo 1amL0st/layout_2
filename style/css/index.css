@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-}
-
-h, h1, h2, h3, h4, h5, p {
-  font-weight: 400;
-  margin: 0;
-}
-
 .link {
   text-decoration: none;
   color: black;
@@ -53,26 +42,21 @@ h, h1, h2, h3, h4, h5, p {
   font-size: 30px;
 }
 
-.item {
-  max-width: 260px;
-}
-.item .figcaption {
-  margin-top: 40px;
-}
-.item .figcaption {
-  font-weight: 600;
-  font-size: 20px;
-}
-.item .text {
-  max-width: 270px;
-  margin-top: 18px;
-  text-align: center;
-}
-
 .article .p {
   text-align: center;
   margin-top: 32px;
   max-width: 630px;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+h, h1, h2, h3, h4, h5, p {
+  font-weight: 400;
+  margin: 0;
 }
 
 .btn {
@@ -120,6 +104,37 @@ h, h1, h2, h3, h4, h5, p {
 }
 .portfolio .btn {
   border-color: #00897b;
+}
+
+.item {
+  max-width: 260px;
+}
+.item .figcaption {
+  margin-top: 40px;
+}
+.item .figcaption {
+  font-weight: 600;
+  font-size: 20px;
+}
+.item .text {
+  max-width: 270px;
+  margin-top: 18px;
+  text-align: center;
+}
+.services .item {
+  padding: 64px 0;
+  background-color: white;
+  max-width: 370px;
+}
+.services .item.is-hover {
+  color: white;
+  background-color: #00897b;
+}
+.services .item * {
+  color: inherit;
+}
+.services .item .item-img.is-hover {
+  filter: invert(1);
 }
 
 .header {
@@ -184,21 +199,6 @@ h, h1, h2, h3, h4, h5, p {
   grid-template-columns: repeat(3, minmax(270px, 370px));
   row-gap: 32px;
   margin-top: 128px;
-}
-.services .item {
-  padding: 64px 0;
-  background-color: white;
-  max-width: 370px;
-}
-.services .item.is-hover {
-  color: white;
-  background-color: #00897b;
-}
-.services .item * {
-  color: inherit;
-}
-.services .item .item-img.is-hover {
-  filter: invert(1);
 }
 .services .link:hover {
   color: unset;

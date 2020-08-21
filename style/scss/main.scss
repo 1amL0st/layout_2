@@ -1,7 +1,10 @@
 @import "./abstracts/variables";
 @import "globals";
 
+@import "./base/base";
+
 @import "./components/btn";
+@import "./components/item";
 
 @import "header";
 @import "home";
