@@ -42,12 +42,6 @@
   font-size: 30px;
 }
 
-.article .p {
-  text-align: center;
-  margin-top: 32px;
-  max-width: 630px;
-}
-
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -135,6 +129,15 @@ h, h1, h2, h3, h4, h5, p {
 }
 .services .item .item-img.is-hover {
   filter: invert(1);
+}
+
+.article .p {
+  text-align: center;
+  margin-top: 32px;
+  max-width: 630px;
+}
+.blog .article {
+  margin-bottom: 128px;
 }
 
 .header {
@@ -354,9 +357,6 @@ h, h1, h2, h3, h4, h5, p {
 .blog {
   padding: 128px 0;
   background-color: #e4fdf9;
-}
-.blog .article {
-  margin-bottom: 128px;
 }
 .blog .blog-a:nth-child(3n) {
   flex-direction: row-reverse;

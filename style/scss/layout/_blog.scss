@@ -2,10 +2,6 @@
     padding: 128px 0;
     background-color: $light-blue;
 
-    .article {
-        margin-bottom: 128px;
-    }
-
     .blog-a:nth-child(3n) {
         flex-direction: row-reverse;
     }
