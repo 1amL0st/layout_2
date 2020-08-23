@@ -158,6 +158,115 @@ h, h1, h2, h3, h4, h5, p {
   font-size: 20px;
 }
 
+.price {
+  /*TODO: Fix this shadow*/
+  box-shadow: 0 0 10px 5px #000000, 0 0 0 6px rgba(0, 0, 0, 0.1);
+  max-width: 370px;
+  width: 100%;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.price:hover {
+  transform: scaleX(1.1) scaleY(1.05);
+  z-index: 5;
+}
+.price > * {
+  z-index: 2;
+}
+.price .bg-img {
+  top: -17%;
+  transform: rotate(-7deg);
+  z-index: 0;
+  background-color: #3949ab;
+  width: 200%;
+  height: 50%;
+}
+.price .name {
+  margin: 40px 0;
+  font-size: 25px;
+  color: white;
+}
+.price .price-value {
+  max-width: fit-content;
+  color: white;
+  margin-bottom: 100px;
+}
+.price .price-value .number {
+  font-size: 50px;
+}
+.price .opp {
+  position: relative;
+  margin-bottom: 36px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px gray;
+}
+
+.member {
+  max-width: 370px;
+}
+.member .photoe {
+  width: 100%;
+  max-height: 320px;
+}
+.member .name {
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.member .socials {
+  width: 80%;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.member .social {
+  border-radius: 8px;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f0f1f1;
+}
+
+.blog-a:nth-child(3n) {
+  flex-direction: row-reverse;
+}
+
+.blog-a:nth-child(3n) .text {
+  margin-left: 0px;
+  margin-right: 3%;
+}
+
+.blog-a {
+  height: 400px;
+}
+.blog-a .text {
+  padding-top: 40px;
+  margin-left: 3%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+.blog-a .text .title:hover {
+  color: #00897b;
+}
+.blog-a .info {
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 32px 0;
+}
+.blog-a .info .type {
+  margin-left: 16px;
+}
+.blog-a .info .fa-calendar {
+  margin-right: 16px;
+}
+.blog-a .info .fa-file {
+  margin-left: 16px;
+}
+
 .header {
   padding: 40px 0;
 }
@@ -260,50 +369,6 @@ h, h1, h2, h3, h4, h5, p {
   margin-top: 128px;
   justify-content: space-between;
 }
-.pricing .price {
-  /*TODO: Fix this shadow*/
-  box-shadow: 0 0 10px 5px #000000, 0 0 0 6px rgba(0, 0, 0, 0.1);
-  max-width: 370px;
-  width: 100%;
-  padding-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-  background-color: white;
-}
-.pricing .price:hover {
-  transform: scaleX(1.1) scaleY(1.05);
-  z-index: 5;
-}
-.pricing .price > * {
-  z-index: 2;
-}
-.pricing .price .bg-img {
-  top: -17%;
-  transform: rotate(-7deg);
-  z-index: 0;
-  background-color: #3949ab;
-  width: 200%;
-  height: 50%;
-}
-.pricing .price .name {
-  margin: 40px 0;
-  font-size: 25px;
-  color: white;
-}
-.pricing .price .price-value {
-  max-width: fit-content;
-  color: white;
-  margin-bottom: 100px;
-}
-.pricing .price .price-value .number {
-  font-size: 50px;
-}
-.pricing .price .opp {
-  position: relative;
-  margin-bottom: 36px;
-  padding-bottom: 8px;
-  border-bottom: solid 1px gray;
-}
 
 .team {
   padding: 128px 0;
@@ -330,70 +395,10 @@ h, h1, h2, h3, h4, h5, p {
 .team .selectors .selector:hover {
   cursor: grab;
 }
-.team .member {
-  max-width: 370px;
-}
-.team .member .photoe {
-  width: 100%;
-  max-height: 320px;
-}
-.team .member .name {
-  margin-top: 32px;
-  font-weight: 600;
-  font-size: 20px;
-}
-.team .member .socials {
-  width: 80%;
-  margin-top: 40px;
-  justify-content: space-between;
-}
-.team .member .social {
-  border-radius: 8px;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f0f1f1;
-}
 
 .blog {
   padding: 128px 0;
   background-color: #e4fdf9;
-}
-.blog .blog-a:nth-child(3n) {
-  flex-direction: row-reverse;
-}
-.blog .blog-a:nth-child(3n) .text {
-  margin-left: 0px;
-  margin-right: 3%;
-}
-.blog .blog-a {
-  height: 400px;
-}
-.blog .blog-a .text {
-  padding-top: 40px;
-  margin-left: 3%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-}
-.blog .blog-a .text .title:hover {
-  color: #00897b;
-}
-.blog .blog-a .text .info {
-  justify-content: flex-start;
-  width: 100%;
-  font-weight: 600;
-  font-size: 17px;
-  margin: 32px 0;
-}
-.blog .blog-a .text .info .type {
-  margin-left: 16px;
-}
-.blog .blog-a .text .info .fa-calendar {
-  margin-right: 16px;
-}
-.blog .blog-a .text .info .fa-file {
-  margin-left: 16px;
 }
 
 .footer {

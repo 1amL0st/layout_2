@@ -1,0 +1,44 @@
+.blog-a:nth-child(3n) {
+    flex-direction: row-reverse;
+}
+
+.blog-a:nth-child(3n) .text {
+    margin-left: 0px;
+    margin-right: 3%;
+}
+
+.blog-a {
+    height: 400px;
+    
+    .text {
+        padding-top: 40px;
+        margin-left: 3%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+
+        .title:hover {
+            color: $sea-like;
+        }
+    }
+
+    .info {
+        justify-content: flex-start;
+        width: 100%;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 32px 0;
+
+        .type {
+            margin-left: 16px;
+        }
+
+        .fa-calendar {
+            margin-right: 16px;
+        }
+
+        .fa-file {
+            margin-left: 16px;
+        }
+    }
+}
