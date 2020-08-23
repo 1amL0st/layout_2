@@ -1,0 +1,17 @@
+.services {
+    background-color: $light-blue;
+    padding: 128px 0;
+
+    .grid {
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, minmax(270px, 370px));
+        row-gap: 32px;
+        margin-top: 128px;
+    }    
+
+    .link:hover {
+        color: unset;
+    }
+}

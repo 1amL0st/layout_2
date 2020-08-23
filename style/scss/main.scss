@@ -1,0 +1,23 @@
+@import "./abstracts/variables";
+@import "globals";
+
+@import "./base/base";
+
+
+@import "./components/btn";
+@import "./components/item";
+@import "./components/article";
+@import "./components/preview";
+@import "./components/price";
+@import "./components/member";
+@import "./components/blog-a";
+
+@import "./layout/header";
+@import "./layout/home";
+@import "./layout/about";
+@import "./layout/services";
+@import "./layout/portfolio";
+@import "./layout/pricing";
+@import "./layout/team";
+@import "./layout/blog";
+@import "./layout/footer";

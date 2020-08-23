@@ -1,0 +1,16 @@
+.header {
+    padding: 40px 0;
+    
+    .container, .nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        width: 100%;
+        max-height: 120px;
+        max-width: 720px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}

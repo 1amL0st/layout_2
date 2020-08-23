@@ -1,0 +1,13 @@
+.pricing {
+    background-color: $light-gray;
+
+    padding: 128px 0;
+
+    font-size: 17px;
+    font-weight: 300;
+
+    .prices {
+        margin-top: 128px;
+        justify-content: space-between;
+    }
+}

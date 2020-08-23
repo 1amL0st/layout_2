@@ -1,0 +1,40 @@
+$item-bg-hover-color: $sea-like;
+$item-bg-default-color: white;
+
+.item {
+    max-width: 260px;
+
+    .figcaption {
+        margin-top: 40px;
+    }
+
+    .figcaption {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .text {
+        max-width: 270px;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+    .services & {
+        padding: 64px 0;
+        background-color: $item-bg-default-color;
+        max-width: 370px;
+
+        &.is-hover {
+            color: white;
+            background-color: $item-bg-hover-color;
+        }
+
+        * {
+            color:inherit
+        }
+
+        .item-img.is-hover {
+            filter: invert(1);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.portfolio {
+    padding: 128px 0;
+
+    .filter-view {
+        margin-top: 128px;
+        width: 100%;
+    }
+
+    .filters {
+        width: 100%;
+        max-width: 720px;
+        justify-content: space-between;
+    }
+
+    .view {
+        margin: 128px 0;
+        width: 100%;
+        height: 720px;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(128px, 370px));
+
+        column-gap: 30px;
+        row-gap:  30px;
+    }
+
+    .view-all {
+        margin: 32px auto 64px auto;
+    }
+}

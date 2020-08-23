@@ -1,0 +1,30 @@
+.team {
+    padding: 128px 0;
+
+    .members {
+        width: 100%;
+        justify-content: space-between;
+        margin: 128px 0;
+    }
+
+    .selectors {
+        margin: auto;
+        max-width: 64px;
+        justify-content: space-between;
+
+        .selector {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $sea-like;
+
+            &.active {
+                background-color: $blue;
+            }
+
+            &:hover {
+                cursor: grab;
+            }
+        }
+    }
+}
